@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-password = st.text_input("Enter password:", type="password")
-if password != "mypassword123":
-    st.stop()
-
 st.set_page_config(page_title="Pivot Table Explorer", layout="wide")
 
 st.title("🔍 Interactive Pivot Table Viewer")
@@ -70,3 +66,4 @@ try:
 
 except Exception as e:
     st.error(f"❌ Error loading data: {e}")
+    

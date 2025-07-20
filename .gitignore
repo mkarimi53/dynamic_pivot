@@ -1,2 +1,5 @@
 .venv
-.devcontainer
+__pycache__
+build
+dist
+.DS_store
